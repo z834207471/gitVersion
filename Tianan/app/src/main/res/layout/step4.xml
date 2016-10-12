@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:src="@mipmap/step4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="验证通过,请点击这里完善相\n关入伙手续！或者到指定地点办理相关手续"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/qiyelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:text="企业信息采集表"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="企业性质:"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/company_natrue"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="注册资金:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/register_money"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="请填写注册资金"
+                        android:textColorHint="@color/gray"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="成立时间:"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/set_time"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="请选择成立时间"
+                        android:textColorHint="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="所属行业:"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/belong"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="员工人数:"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/person_num"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="主营业务:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/yewu"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="请填写主营业务"
+                        android:textColorHint="@color/gray"
+                        android:inputType="text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/qiyesave"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/newbut"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/qiyequxiao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/newbut"
+                        android:text="取消"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:text="商户信息采集表"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="主营业务:"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/sh_natrue"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="年营业额:"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/sh_money"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="员工人数:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/sh_personnum"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/shsave"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/newbut"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/shquxiao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/newbut"
+                        android:text="取消"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:text="个体信息采集表"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="籍贯:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/palce"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="民族:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/nation"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="民族:"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/sex"
+                        style="@style/macompanytextstyle"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="男"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="女"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="出生日期:"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/birthday"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="职务:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/post"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="手机号码:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/mobilenum"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="座机号码:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/gt_phone"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:inputType="phone"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="QQ号码:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/QQnum"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:maxLength="10"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="兴趣爱好:"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/interest"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/register2format"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/mycompanynamestyle"
+                        android:text="个人荣誉:"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/honor"
+                        style="@style/macompanytextstyle"
+                        android:background="@android:drawable/editbox_background_normal"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/persave"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/newbut"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/perquxiao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/newbut"
+                        android:text="取消"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="70dp"
+                android:background="@color/darkcyan">
+
+                <TextView
+                    style="@style/register2format"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="如果您有什么疑问请及时联系我们,电话:1234567" />
+                <TextView
+                    style="@style/register2format"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="请于2016年8月26日之前领取，过期将重新校验入伙资格" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

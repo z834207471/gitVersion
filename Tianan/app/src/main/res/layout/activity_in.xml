@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InpageActivity"
+    >
+    <View
+        android:id="@+id/vieww"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        />
+    <HorizontalScrollView
+        android:id="@+id/hzscr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            >
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="650dp"
+                android:src="@mipmap/buile"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天 安 物 业\n祝 您 平 安"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

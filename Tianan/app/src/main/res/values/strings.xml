@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tianan</string>
+    <string name="nature1">现场客户-业主</string>
+    <string name="nature2">现场客户-租主</string>
+    <string name="nature3">隐形客户-业主</string>
+    <string name="nature4">隐形客户-租主</string>
+    <string name="spin_prompt"> 请选择 </string>
+    <string-array name="cities">
+        <item> 北京 </item>
+        <item> 上海 </item>
+        <item> 南京 </item>
+        <item> 乌鲁木齐 </item>
+        <item> 哈尔滨 </item>
+        <item> 符拉迪沃斯托克 </item>
+    </string-array>
+
+</resources>
+

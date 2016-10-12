@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/darkcyan"
+        android:gravity="center"
+        android:text="状态"
+        android:textColor="#FFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/title_gray"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/inspet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验查\n资格"
+                android:textColor="@drawable/textcolor"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:id="@+id/right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inspet"
+                android:src="@drawable/right"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/reveivhouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房屋交付\n通知书"
+                android:gravity="center"
+                android:textColor="@drawable/textcolor"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:id="@+id/right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inspet"
+                android:src="@drawable/right"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/acknowledgement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="领取验收\n回执书"
+                android:textColor="@drawable/textcolor"
+                android:gravity="center"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/right3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inspet"
+                android:src="@drawable/right"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/transact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="办理相\n关手续"
+                android:textColor="@drawable/textcolor"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/right4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inspet"
+                android:src="@drawable/right"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/finishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成\n校验"
+                android:textColor="@drawable/textcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/title_gray"
+
+            android:gravity="center_vertical">
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/stateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" />
+</LinearLayout>

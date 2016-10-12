@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.example.tianan.ChangeActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/barstyle"
+            android:background="@color/darkcyan"
+            android:gravity="center"
+            android:text="信息修改"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mycompanynamestyle"
+                android:text="公司名称:" />
+
+            <EditText
+                android:id="@+id/myCNchange"
+                style="@style/macompanytextstyle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <RadioGroup
+            android:id="@+id/companytype"
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/radiostyle"
+                android:gravity="center"
+                android:text="类型:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioButton
+                style="@style/radiostyle"
+                android:gravity="center"
+                android:text="企业" />
+
+            <RadioButton
+                style="@style/radiostyle"
+                android:gravity="center"
+                android:text="商业" />
+
+            <RadioButton
+                style="@style/radiostyle"
+                android:gravity="center"
+                android:text="个体" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mycompanynamestyle"
+                android:text="公司面积:" />
+
+            <EditText
+                android:id="@+id/myCSchange"
+                style="@style/macompanytextstyle"
+                android:drawableRight="@mipmap/pdff"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mycompanynamestyle"
+                android:text="公司地址:" />
+
+            <EditText
+                android:id="@+id/myCAchange"
+                style="@style/macompanytextstyle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mycompanynamestyle"
+                android:text="租赁时间:" />
+
+            <EditText
+                android:id="@+id/myCTchange"
+                style="@style/macompanytextstyle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mycompanynamestyle"
+                android:text="使用性质:" />
+
+            <EditText
+                android:id="@+id/myCNaturechange"
+                style="@style/macompanytextstyle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mycompanynamestyle"
+                android:text="历史客户:" />
+
+            <EditText
+                android:id="@+id/myCCchange"
+                style="@style/macompanytextstyle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/register2format"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/myadress"
+                style="@style/mycompanynamestyle"
+                android:text="地址:" />
+
+            <EditText
+                android:id="@+id/myAdresschange"
+                style="@style/macompanytextstyle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/companysave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/newbut"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/companyquxiao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/newbut"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
